@@ -4,8 +4,8 @@
 </script>
 
 <section id="commander-search">
-	<form class="w-6/12 mx-auto py-10">
-		<input class="input" type="text" placeholder="Commander Name" />
+	<form class="w-6/12 mx-auto py-10" action="/search">
+		<input method="GET" class="input" type="text" placeholder="Commander Name" name="term" />
 	</form>
 </section>
 
