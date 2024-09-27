@@ -18,7 +18,7 @@
 	let sevenpluscmc = 0;
 </script>
 
-<div class="container mx-auto">
+<div class="container px-5 mx-auto">
 	<section>
 		<div class="grid md:grid-cols-4 gap-7">
 			<div class="col mt-4">
@@ -54,9 +54,9 @@
 					<input class="input" type="number" bind:value={green} />
 				</label>
 			</div>
-			<div class="col-span-2 form-control mt-4">
+			<div class="md:col-span-2 form-control mt-4">
 				<h4 class="h4">Mana Curve</h4>
-				<div class="grid md:grid-cols-2 gap-7">
+				<div class="md:grid md:grid-cols-2 gap-7">
 					<div class="col">
 						<label class="label mt-2">
 							<span>0 CMC Spells</span>
