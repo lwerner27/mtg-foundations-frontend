@@ -16,6 +16,29 @@
 	let fivecmc = 0;
 	let sixcmc = 0;
 	let sevenpluscmc = 0;
+
+	const handleSave = async () => {
+		const deckData = {
+			commander: commander.name,
+			cardtext: commander.oracle_text,
+			cmc: commander.cmc,
+			lands,
+			zerocmc,
+			onecmc,
+			twocmc,
+			threecmc,
+			fourcmc,
+			fivecmc,
+			sixcmc,
+			sevenpluscmc,
+			white,
+			blue,
+			black,
+			red,
+			green
+		};
+		console.log(deckData);
+	};
 </script>
 
 <div class="container px-5 mx-auto">
@@ -95,6 +118,7 @@
 					</div>
 				</div>
 				<button
+					on:click={handleSave}
 					type="button"
 					class="btn bg-gradient-to-br variant-gradient-primary-tertiary w-full mt-9">SAVE</button
 				>
